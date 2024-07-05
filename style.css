@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E7F6FF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh;
+    width: 100%;
+    position: relative; /* Agregar posición relativa */
+    margin: 0 auto; /* Centrar la fila horizontalmente */
+}
+
+.container > .row {
+    width: 100%; /* Ajustar el ancho de la fila */
+    max-width: 1200px; /* Ancho máximo opcional */
+    margin: 0 auto; /* Centrar la fila horizontalmente */
+}
+.input-container {
+    background-color: #E7F6FF;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre el contenedor de entrada y salida */
+    height: 100%;
+    width: 90%; /* Ancho del input-container */
+    max-width: 600px; /* Ancho máximo */
+    margin: center; /* Centrar el contenedor */
+}
+.input-text {
+    background-color: #E7F6FF; /* Fondo blanco para el textarea */
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    color: #0A1D80;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Espacio entre el textarea y los botones */
+    height: calc(100% - 50px); /* Ajuste de altura para alinear botones */
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px; /* Espacio entre los botones y el textarea */
+    align-items: flex-end; /* Alinear los botones al final */
+}
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px; /* Hacer los botones más redondeados */
+    cursor: pointer;
+    background-color: #0A1D80; /* Color azul oscuro */
+    color: #fff; /* Texto blanco */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+.buttons button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+.buttons button:active {
+    background-color: #0A1D80; /* Color blanco al hacer clic */
+    color: #0A1D80; /* Texto azul oscuro */
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Alinear horizontalmente */
+}
+
+.error i {
+    margin-right: 5px; /* Espacio a la derecha del ícono */
+}
+.output-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 200px; /* Altura mínima recomendada, ajusta según tus necesidades */
+    display: flex;
+    flex-direction: column-reverse; /* Invertir el orden si es necesario */
+    justify-content: flex-start; /* Alinear contenido desde arriba */
+    align-items: center; /* Centrar horizontalmente */
+    position: relative; /* Asegurar posicionamiento relativo */
+    width: 100%; /* Ancho del output-container */
+    max-width: 600px; /* Ancho máximo */
+    margin: auto; /* Centrar el contenedor */
+}
+
+.output-text {
+    flex: 1; /* Hacer que el texto de salida ocupe todo el espacio disponible */
+    margin-top: 10px; /* Espacio entre la imagen y el texto de salida */
+    margin-bottom: 40px; /* Ajustar el espacio entre el texto de salida y el botón de copiar */
+    font-size: 25px;
+}
+.output-text p {
+    margin: 0;
+}
+.copy-button {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #0A1D80;
+    color: #fff;
+    margin-top: 20px; /* Ajustar el margen superior según sea necesario */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.message-not-found {
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="height: 60%;">
+            <div class="col-lg-6 col-12" style="margin-bottom: 50px;">
+                <div class="input-container">                    
+                    <textarea id="input-text" class="input-text" placeholder="Ingrese el texto aquí"></textarea>
+                    <p id="error-message" class="error"></p>
+                    <div class="buttons">
+                        <button id="encrypt-button">Encriptar</button>
+                        <button id="decrypt-button">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 d-flex flex-column" style="margin-top: 10px;">
+                <div class="output-container" id="output-container">
+                    <div class="output-text" id="output-text">
+                        <p class="message-not-found">Ningún mensaje fue encontrado</p>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>                    
+                    <div class="image-container mb-3 d-none d-lg-block">
+                        <img src="img/1.png" alt="Imagen" id="output-image">
+                    </div>
+                    <button id="copy-button" class="copy-button">Copiar</button>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
